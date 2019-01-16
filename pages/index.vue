@@ -2,17 +2,12 @@
   <section class="container">
     <div>
       <logo/>
+
       <h1 class="title">learn-nuxt-app</h1>
       <h2 class="subtitle">Lets learn nuxt and vue</h2>
       <div class="links">
-        <a 
-          href="https://nuxtjs.org/" 
-          target="_blank" 
-          class="button--green">Documentation</a>
-        <a 
-          href="https://github.com/nuxt/nuxt.js" 
-          target="_blank" 
-          class="button--grey">GitHub</a>
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
   </section>
@@ -28,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped sass>
 .container {
   min-height: 100vh;
   display: flex;
