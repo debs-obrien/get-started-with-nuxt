@@ -3,11 +3,11 @@
     <div>
       <Title :title="title" :subtitle="subtitle"/>
       <p>As we are going to work with sass we will need to install node-sass and sass-loader</p>
-      <pre><code>npm i node-sass <br>npm i sass-loader</code></pre>
+      <pre><code>npm i node-sass sass-loader</code></pre>
       <p>First lets create some folders for your images fonts and assets. Create a folder for each one in the assets folder.</p>
       <p>In the scss folder lets create a styles.scss file and a varialbes.scss file and a fonts.scss file.</p>
       <p>Then open the styles.scss file and add the following sot that the fonts and variables are included:</p>
-      <pre><code>@import 'fonts'; <br>@import 'variables';</code></pre>
+      <pre><code>@import 'fonts';<br>@import 'variables';</code></pre>
       <p>Now you can go to your default.vue page in the layouts folder and cut the styles from there into the styles.scss file. I prefer to have all my styles in the styles.scss instead of tring to remember that there are also some styles in the default layout. However if you have a project with many different layouts then maybe having your styles there works best for you.</p>
       <p>Now that we have created a styles.scss file with our styles you will probably see if you have the dev server open that you now have no styles. So lets now tell Nuxt that that file exists. To do this we need to open our nuxt config and add this to the css option. You may need to change this if your route or name of your styles is differnt. Also you can add more than one should you require however I prefer to add this to the styles.scss so I have a better idea of what is loding without having to open the nuxt config but adding the styles here is a good option for adding any vendor styles that you may require</p>
       <pre><code>css: ['~assets/scss/styles.scss'],</code></pre>
@@ -15,12 +15,14 @@
       <p>To do this we need to install the nuxt sass recources loader</p>
       <pre><code>npm i nuxt-sass-resources-loader</code></pre>
       <p>Then we need to tell nuxt which file we want to globally make available. Open the nuxt.config.js and add to the modules the following code:</p>
-      <pre><code>modules: [<br>['nuxt-sass-resources-loader', './assets/scss/variables.scss']<br>],
-        <br>// or array of paths
-        <br>['nuxt-sass-resources-loader', [
-        <br>'@/path/to/varialbes.scss',
-        <br>'@/path/to/mixins.scss'
-        <br>]],
+      <pre><code>modules: [
+      ['nuxt-sass-resources-loader', './assets/scss/variables.scss']
+      ],
+      // or array of paths
+      ['nuxt-sass-resources-loader', [
+      '@/path/to/varialbes.scss',
+      '@/path/to/mixins.scss'
+      ]],
       </code></pre>
       <p>In order for this to load properly you will need to stop and start your servers again</p>
       <pre><code>npm run dev</code></pre>
@@ -32,7 +34,9 @@
       <p>Here we are telling vue to use scss for the styles and to make the styles scoped so they only effect this component. You can choose to have all components as scoped or just some. The choice is yours. You can also have multiple style tags in your component so you can have a mix of scoped and non scoped. You could also have one for scss and another style tag just for css but really why would you want to?</p>
     </div>
     <p>Now all you have to do is add a style with the color $primary and you should see the color change.</p>
-    <pre><code>body {<br>background-color: $primary;<br>}</code></pre>
+    <pre><code>body {
+    background-color: $primary;
+    }</code></pre>
     <p>Ok yes your right it's really ugly but it works but yeh maybe you should delete it :)</p>
   </section>
 </template>

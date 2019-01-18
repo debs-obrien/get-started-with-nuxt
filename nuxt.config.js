@@ -77,6 +77,15 @@ module.exports = {
         )
       }
     },
+    extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.plugins.push(
+          new StylelintPlugin({
+            files: ['**/*.vue', '**/*.scss']
+          })
+        )
+      }
+    },
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

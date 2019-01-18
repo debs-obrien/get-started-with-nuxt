@@ -3,9 +3,9 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "scss/dollar-variable-colon-space-after": "always",
-    "color-no-invalid-hex": true,
-    "block-no-empty": true,
-    "scss/selector-no-redundant-nesting-selector": true,
-    "declaration-block-no-duplicate-properties": true
+    "color-no-invalid-hex": 1,
+    "block-no-empty": 1,
+    "scss/selector-no-redundant-nesting-selector": 1,
+    "declaration-block-no-duplicate-properties": 1
   }
 }

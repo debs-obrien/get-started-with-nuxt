@@ -1,8 +1,8 @@
 {
   "name": "learn-nuxt-app",
   "version": "1.0.0",
-  "description": "Lets learn nuxt and vue",
-  "author": "patterson",
+  "description": "Lets learn how to setup a nuxt app",
+  "author": "Debbie O'Brien",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -11,7 +11,6 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "lint:css": "stylelint 'components/**/*.vue'",
     "precommit": "npm run lint"
   },
   "dependencies": {

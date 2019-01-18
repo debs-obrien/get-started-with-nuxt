@@ -25,13 +25,15 @@ export default {
 
 <style lang="scss" scoped>
 .title-wrapper {
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
   text-align: center;
   .title {
     font-size: 3em;
   }
   .subtitle {
     font-size: 1.5em;
+  }
+  .me {
   }
 }
 </style>
