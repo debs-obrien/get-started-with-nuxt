@@ -11,8 +11,8 @@ export default {
   },
   data() {
     return {
-      title: 'title',
-      subtitle: 'subtitle'
+      title: 'page coming soon',
+      subtitle: ''
     }
   }
 }

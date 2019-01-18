@@ -26,23 +26,23 @@ export default {
           text: 'Folder Structure'
         },
         {
-          link: '/configurationSass',
+          link: '/sassConfiguration',
           text: 'Sass Configuration'
         },
         {
-          link: '/configurationWebpack',
+          link: '/webpackConfiguration',
           text: 'wepback Configuration'
         },
         {
-          link: '',
+          link: '/template',
           text: 'Create our layout'
         },
         {
-          link: '',
+          link: '/template',
           text: 'Add a Component'
         },
         {
-          link: '/configuration',
+          link: '/template',
           text: 'Create Routes'
         }
       ]
