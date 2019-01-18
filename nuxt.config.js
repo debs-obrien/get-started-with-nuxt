@@ -1,10 +1,16 @@
 const pkg = require('./package')
 const StylelintPlugin = require('stylelint-webpack-plugin')
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/get-started-with-nuxt/'
+        }
+      }
+    : {}
 
 module.exports = {
-  router: {
-    base: '/get-started-with-nuxt/'
-  },
   mode: 'universal',
 
   /*
@@ -101,17 +107,4 @@ module.exports = {
       }
     }
   }
-}
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/get-started-with-nuxt/'
-        }
-      }
-    : {}
-
-export default {
-  ...routerBase
 }
