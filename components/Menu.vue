@@ -7,8 +7,24 @@
     <b-nav-item active>
       <nuxt-link to="/setup">Setup</nuxt-link>
     </b-nav-item>
-    <b-nav-item>Another Link</b-nav-item>
-    <b-nav-item disabled>Disabled</b-nav-item>
+    <b-nav-item>
+      <nuxt-link to="/folderStructure">Folder Structure</nuxt-link>
+    </b-nav-item>
+    <b-nav-item>
+      <nuxt-link to="/configuration">Configuration Sass</nuxt-link>
+    </b-nav-item>
+    <b-nav-item disabled>
+      <nuxt-link to="/configuration">Configuration wepback</nuxt-link>
+    </b-nav-item>
+    <b-nav-item disabled>
+      <nuxt-link to="/configuration">Create our layout</nuxt-link>
+    </b-nav-item>
+    <b-nav-item disabled>
+      <nuxt-link to="/configuration">Add a Component</nuxt-link>
+    </b-nav-item>
+    <b-nav-item disabled>
+      <nuxt-link to="/configuration">Create Routes</nuxt-link>
+    </b-nav-item>
   </b-nav>
 </template>
 <script>

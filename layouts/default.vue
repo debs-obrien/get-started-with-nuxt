@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-container fluid>
-      <b-row class="text-center">
+      <b-row>
         <b-col cols="3">
           <Menu/>
         </b-col>
-        <b-col>
+        <b-col cols="9">
           <nuxt/>
         </b-col>
       </b-row>
