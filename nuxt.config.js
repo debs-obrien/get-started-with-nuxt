@@ -2,6 +2,9 @@ const pkg = require('./package')
 const StylelintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
+  router: {
+    base: '/get-started-with-nuxt/'
+  },
   mode: 'universal',
 
   /*
