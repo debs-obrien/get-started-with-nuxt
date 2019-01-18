@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <b-container fluid>
-      <b-row>
-        <b-col cols="3">
-          <Menu/>
-        </b-col>
-        <b-col cols="9">
-          <nuxt/>
-        </b-col>
-      </b-row>
-    </b-container>
+  <div class="page-wrapper">
+    <div class="grid">
+      <div class="grid-item">
+        <Menu/>
+      </div>
+      <div class="grid-item">
+        <nuxt/>
+      </div>
+    </div>
   </div>
 </template>
 <script>

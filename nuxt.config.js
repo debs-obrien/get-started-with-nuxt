@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const StylelintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   mode: 'universal',
@@ -37,7 +38,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',
     ['nuxt-sass-resources-loader', './assets/scss/variables.scss']
   ],
   /*
@@ -66,6 +66,15 @@ module.exports = {
             enforce: true
           }
         }
+      }
+    },
+    extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.plugins.push(
+          new StylelintPlugin({
+            files: ['**/*.vue', '**/*.scss']
+          })
+        )
       }
     },
     extend(config, ctx) {

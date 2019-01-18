@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      title: 'Project Configuration',
+      title: 'Sass Configuration',
       subtitle: 'Lets get this project configured'
     }
   }

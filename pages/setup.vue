@@ -1,19 +1,9 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="title text-center">Setup the App</h1>
-      <h2 class="subtitle text-center">Lets start at the very beginning.
-        <br>It's a very good place to start
-      </h2>
-      <p>I recommend you use vs code for this project and install the extension pack which will set you up with everything you need.</p>
-      <ul>
-        <li>In vs code install vue VS Code Extension Pack</li>
-      </ul>
+      <Title :title="title" :subtitle="subtitle"/>
+      <p>I recommend you use vs code for this project and install the 'vue VS Code Extension Pack' which will set you up with everything you need.</p>
       <p>Next open prettier - code/preferences/settings and search for prettier and make sure that it’s setup how you require it</p>
-      <ul>Checklist
-        <li>Arrow parens - avoid</li>
-        <li>Bracket spacing - on</li>
-      </ul>
       <p>Once we have all this setup we are ready to install nuxt so open a terminal window. Make sure you are creating it in the desired place so cd myproject for example. When you create a nuxt project it will create a folder for you so keep that in mind when running this command</p>
       <pre><code>npx create-nuxt-app project-name</code></pre>
       <p>Once you run the command you will get the following and one by one in the command you need ot answer the questions. Here is what I reccommend just change the name and description to whatever project you are working on.</p>
@@ -33,8 +23,19 @@
 </template>
 
 <script>
+import Title from '~/components/Title'
+
 export default {
-  components: {}
+  components: {
+    Title
+  },
+  data() {
+    return {
+      title: 'Setup the App',
+      subtitle:
+        "Lets start at the very beginning. It's a very good place to start"
+    }
+  }
 }
 </script>
 

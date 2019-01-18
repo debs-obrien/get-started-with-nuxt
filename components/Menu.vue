@@ -1,38 +1,59 @@
 <template>
-  <b-nav vertical>
+  <div class="menu">
     <h2>Create a Nuxt app</h2>
-    <b-nav-item>
-      <nuxt-link to="/">Home</nuxt-link>
-    </b-nav-item>
-    <b-nav-item active>
-      <nuxt-link to="/setup">Setup</nuxt-link>
-    </b-nav-item>
-    <b-nav-item>
-      <nuxt-link to="/folderStructure">Folder Structure</nuxt-link>
-    </b-nav-item>
-    <b-nav-item>
-      <nuxt-link to="/configuration">Configuration Sass</nuxt-link>
-    </b-nav-item>
-    <b-nav-item disabled>
-      <nuxt-link to="/configuration">Configuration wepback</nuxt-link>
-    </b-nav-item>
-    <b-nav-item disabled>
-      <nuxt-link to="/configuration">Create our layout</nuxt-link>
-    </b-nav-item>
-    <b-nav-item disabled>
-      <nuxt-link to="/configuration">Add a Component</nuxt-link>
-    </b-nav-item>
-    <b-nav-item disabled>
-      <nuxt-link to="/configuration">Create Routes</nuxt-link>
-    </b-nav-item>
-  </b-nav>
+    <ul v-for="(item, index) in menu" :key="index">
+      <li class="nav-link">
+        <nuxt-link :to="item.link">{{ item.text }}</nuxt-link>
+      </li>
+    </ul>
+  </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      menu: [
+        {
+          link: '/',
+          text: 'Home'
+        },
+        {
+          link: '/setup',
+          text: 'Setup'
+        },
+        {
+          link: '/folderStructure',
+          text: 'Folder Structure'
+        },
+        {
+          link: '/configurationSass',
+          text: 'Sass Configuration'
+        },
+        {
+          link: '/configurationWebpack',
+          text: 'wepback Configuration'
+        },
+        {
+          link: '',
+          text: 'Create our layout'
+        },
+        {
+          link: '',
+          text: 'Add a Component'
+        },
+        {
+          link: '/configuration',
+          text: 'Create Routes'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped scss>
 .nav-link {
-  text-align: left;
+  font-size: 1.3em;
+  margin-bottom: 10px;
 }
 </style>
