@@ -10,7 +10,7 @@ const routerBase =
       }
     : {}
 
-module.exports = {
+module.exports = Object.assign(routerBase, {
   mode: 'universal',
 
   /*
@@ -107,4 +107,4 @@ module.exports = {
       }
     }
   }
-}
+})
