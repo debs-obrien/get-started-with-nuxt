@@ -1,0 +1,27 @@
+{
+  "processors": ["stylelint-processor-html"],
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "scss/dollar-variable-colon-space-after": "always",
+    "no-duplicate-selectors": true,
+    "no-empty-source": null,
+    "max-empty-lines": null,
+    "declaration-colon-newline-after": null,
+    "value-list-comma-newline-after": null,
+    "at-rule-empty-line-before": null,
+    "max-nesting-depth": 4,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "comment-no-empty": true,
+    "no-duplicate-at-import-rules": true,
+    "no-extra-semicolons": true,
+    "no-invalid-double-slash-comments": true,
+    "color-named": "never",
+    "color-no-hex": null,
+    "value-no-vendor-prefix": true,
+    "declaration-no-important": true,
+    "string-quotes": "single",
+    "rule-empty-line-before": null
+  }
+}

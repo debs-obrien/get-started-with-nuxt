@@ -86,15 +86,6 @@ module.exports = Object.assign(routerBase, {
         )
       }
     },
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.plugins.push(
-          new StylelintPlugin({
-            files: ['**/*.vue', '**/*.scss']
-          })
-        )
-      }
-    },
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
