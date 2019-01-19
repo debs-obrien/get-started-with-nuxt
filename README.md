@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # learn-nuxt-app
 
 > Lets learn nuxt and vue
@@ -31,4 +29,4 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## To see the page live
 
-[website](https://debs-obrien.github.io/get-started-with-nuxt/configurationWebpack)
+[website](https://debs-obrien.github.io/get-started-with-nuxt)
