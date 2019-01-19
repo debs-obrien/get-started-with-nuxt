@@ -1,5 +1,4 @@
 const pkg = require('./package')
-const StylelintPlugin = require('stylelint-webpack-plugin')
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -77,15 +76,7 @@ module.exports = Object.assign(routerBase, {
         }
       }
     },
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.plugins.push(
-          new StylelintPlugin({
-            files: ['**/*.vue', '**/*.scss']
-          })
-        )
-      }
-    },
+
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

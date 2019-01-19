@@ -30,19 +30,23 @@ export default {
           text: 'Sass Configuration'
         },
         {
+          link: '/lintConfigeration',
+          text: 'Lint Configuration'
+        },
+        {
           link: '/webpackConfiguration',
           text: 'wepback Configuration'
         },
         {
-          link: '/template',
+          link: '/layoutSetup',
           text: 'Create our layout'
         },
         {
-          link: '/template',
+          link: '/components',
           text: 'Add a Component'
         },
         {
-          link: '/template',
+          link: '/routes',
           text: 'Create Routes'
         }
       ]

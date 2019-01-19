@@ -11,6 +11,7 @@
       <p>Then run the analyzer and get analyzing</p>
       <pre><code>nuxt build -a</code></pre>
     </section>
+
     <section class="sub-section">
       <h3 class="sub-heading">Extract Css</h3>
       <p>To extract your css into a separate file add the following to your nuxt.config</p>

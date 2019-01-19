@@ -1,5 +1,11 @@
 <template>
-  <Title :title="title" :subtitle="subtitle"/>
+  <section>
+    <Title :title="title" :subtitle="subtitle"/>
+    <section class="sub-section">
+      <h3 class="sub-heading">--</h3>
+      <p>.....</p>
+    </section>
+  </section>
 </template>
 
 <script>
@@ -18,5 +24,5 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 </style>

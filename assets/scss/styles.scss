@@ -23,6 +23,9 @@ html {
 body {
   color: #34495e;
 }
+p {
+  margin-bottom: 10px;
+}
 .sub-section {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -38,13 +41,11 @@ body {
   display: grid;
   grid-template-columns: 40px 1fr 3fr 40px;
   margin: 0 auto;
+  max-width: 1300px;
 }
 @media only screen and (max-width: 900px) {
   .grid {
-    display: grid;
-    grid-template-columns: 20px 260px 1fr 20px;
-    grid-template-rows: 40px 1fr 40px;
-    gap: 20px 20px;
+    grid-column-gap: 10px;
   }
 }
 a:hover {

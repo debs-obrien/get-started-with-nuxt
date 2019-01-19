@@ -3,16 +3,12 @@
     <div>
       <Title :title="title" :subtitle="subtitle"/>
       <p>Open your project in vs code and you should see the following if you have follwed the instructions in setup:</p>
-      <ul v-for="(folder, index) in folders" :key="index">
-        <li>
-          <p>
-            <span class="emphasize">{{ folder.title }}</span>
-            {{ folder.description }}
-          </p>
-        </li>
-      </ul>
-      <div class="image-wrapper">
-        <img src="~/assets/images/folder-structure.png" alt="nuxt folder structure">
+
+      <div v-for="(folder, index) in folders" :key="index">
+        <section class="sub-section">
+          <h3 class="sub-heading">{{ folder.title }}</h3>
+          <p>{{ folder.description }}</p>
+        </section>
       </div>
     </div>
   </section>
