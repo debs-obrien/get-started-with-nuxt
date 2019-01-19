@@ -4,12 +4,6 @@
       <Title :title="title" :subtitle="subtitle"/>
 
       <section class="sub-section">
-        <h3 class="sub-heading">Setup VS Code</h3>
-        <p>I recommend you use VS Code for this project and install the 'vue VS Code Extension Pack' which will set you up with everything you need.</p>
-        <p>Next open prettier - code/preferences/settings and search for prettier and make sure that it’s setup how you require it</p>
-      </section>
-
-      <section class="sub-section">
         <h3 class="sub-heading">Install Nuxt</h3>
         <p>Once we have all this setup we are ready to install nuxt so open a terminal window. Make sure you are creating it in the desired place so cd myproject for example. When you create a nuxt project it will create a folder for you so keep that in mind when running this command</p>
         <pre><code>npx create-nuxt-app project-name</code></pre>
@@ -38,9 +32,8 @@ export default {
   },
   data() {
     return {
-      title: 'Setup the App',
-      subtitle:
-        "Lets start at the very beginning. It's a very good place to start"
+      title: 'Installing Nuxt',
+      subtitle: 'Lets install nuxt exactly how we want it'
     }
   }
 }

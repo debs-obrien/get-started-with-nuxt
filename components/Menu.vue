@@ -18,12 +18,16 @@ export default {
           text: 'Home'
         },
         {
-          link: '/setup',
-          text: 'Setup'
+          link: '/vsCodeSetup',
+          text: 'VS Code Setup'
         },
         {
-          link: '/folderStructure',
-          text: 'Folder Structure'
+          link: '/boilerplate',
+          text: 'Boilerplate Project'
+        },
+        {
+          link: '/nuxtSetup',
+          text: 'Nuxt Setup'
         },
         {
           link: '/sassConfiguration',
@@ -36,6 +40,10 @@ export default {
         {
           link: '/webpackConfiguration',
           text: 'wepback Configuration'
+        },
+        {
+          link: '/folderStructure',
+          text: 'Folder Structure'
         },
         {
           link: '/layoutSetup',
