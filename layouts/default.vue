@@ -2,10 +2,27 @@
   <div class="page-wrapper">
     <div class="grid">
       <div class="grid-item">
+        <div class="twitter">
+          <a hef="https://twitter.com/debs_obrien">
+            <img src="~/assets/images/twitter.png" alt="twitter">
+          </a>
+          <p class="twitter-handler">
+            <a hef="https://twitter.com/debs_obrien">debs_obrien</a>
+          </p>
+        </div>
+      </div>
+      <div class="grid-item">
         <Menu/>
       </div>
       <div class="grid-item">
         <nuxt/>
+      </div>
+      <div class="grid-item">
+        <div class="github">
+          <a hef="https://github.com/debs-obrien">
+            <img src="~/assets/images/github.png" alt="github">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -20,5 +37,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.twitter {
+  position: fixed;
+  bottom: 20px;
+  transform: rotate(270deg);
+  img {
+    height: 40px;
+  }
+}
+.twitter-handler {
+  position: absolute;
+  left: 42px;
+  bottom: 16px;
+}
+.github {
+  position: fixed;
+  bottom: 20px;
+  img {
+    height: 40px;
+  }
+}
 </style>

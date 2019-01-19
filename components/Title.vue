@@ -33,7 +33,5 @@ export default {
   .subtitle {
     font-size: 1.5em;
   }
-  .me {
-  }
 }
 </style>

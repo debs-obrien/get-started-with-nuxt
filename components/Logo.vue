@@ -31,8 +31,6 @@
   border-right: 105px solid transparent;
   border-bottom: 180px solid #41b883;
 }
-.me {
-}
 
 .Triangle--two {
   top: 30px;

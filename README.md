@@ -29,6 +29,6 @@ nuxt build -a
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
-## To see the page live click the link below
+## To see the page live
 
-(https://debs-obrien.github.io/get-started-with-nuxt/configurationWebpack)
+[website](https://debs-obrien.github.io/get-started-with-nuxt/configurationWebpack)
