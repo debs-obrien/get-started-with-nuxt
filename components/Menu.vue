@@ -94,5 +94,8 @@ export default {
   .hamburger {
     display: block;
   }
+  .nav-link {
+    text-align: center;
+  }
 }
 </style>

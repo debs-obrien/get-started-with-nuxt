@@ -7,7 +7,7 @@
       <div v-for="(folder, index) in folders" :key="index">
         <section class="sub-section">
           <h3 class="sub-heading">{{ folder.title }}</h3>
-          <p>{{ folder.description }}</p>
+          <p v-html="folder.description"></p>
         </section>
       </div>
     </div>
@@ -26,7 +26,7 @@ export default {
       subtitle: 'Lets walk through how the folders are structured.',
       folders: [
         {
-          title: 'nuxt:',
+          title: '.nuxt:',
           description:
             "This is where all the magic works and where you will find your dist folder when you use the build commands. You don't and shouldn't have to change anything in here"
         },
