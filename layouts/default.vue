@@ -37,25 +37,31 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .twitter {
-  position: fixed;
-  bottom: 20px;
-  transform: rotate(270deg);
   img {
     height: 40px;
   }
 }
-.twitter-handler {
-  position: absolute;
-  left: 42px;
-  bottom: 16px;
-}
 .github {
-  position: fixed;
-  bottom: 20px;
   img {
     height: 40px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .twitter {
+    position: fixed;
+    bottom: 20px;
+    transform: rotate(270deg);
+  }
+  .twitter-handler {
+    position: absolute;
+    left: 42px;
+    bottom: 16px;
+  }
+  .github {
+    position: fixed;
+    bottom: 20px;
   }
 }
 </style>
