@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <Title :title="title" :subtitle="subtitle"/>
 
     <section class="sub-section">
@@ -12,7 +12,9 @@
       <h3 class="sub-heading">More Layouts</h3>
       <p>You can create as many layouts as you want. Generally you won't have that many but perhaps one for your blog if you have one different to your web and also a 404 can sometimes be designed as a different layout.</p>
       <p>Specifying a different layout is really easy. All you have to do is add the following under export default in your page. If you don't add this then the defualt template will be used.</p>
-      <pre><code>layout: 'blog'</code></pre>
+      <pre class="source-component-vue"><code>
+        <span>layout: 'blog'</span>
+      </code></pre>
     </section>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <Title :title="title" :subtitle="subtitle"/>
 
     <section class="sub-section">
@@ -14,13 +14,21 @@
       <p>There are only 3 things you have to do to add a component so it really is very simple.</p>
       <p>Let's go to the page where you want to add the component. Let's put it in the index page.</p>
       <p>First you need to import the componet so that the page knows it exists</p>
-      <pre><code>import Title from '~/components/Title'</code></pre>
+      <pre class="source-component-vue"><code>
+        <span>import Title from '~/components/Title'</span>
+      </code></pre>
       <p>Next we need to export the component in our script tag.</p>
-      <pre><code>export default {
-      components: {
-      Title
-      },</code></pre>
+      <pre class="source-component-vue"><code>
+        <span>export default {</span>
+          <span>components: {</span>
+            <span>Title</span>
+          <span>},</span>
+        <span>}</span>  
+      </code></pre>
       <p>And finally we need to just add this tag to our html. The tag must be the same name as you called it, in this case Title</p>
+      <pre class="source-component-vue"><code>
+        <span>&#60;Title&#47;&#62;</span>
+      </code></pre>
     </section>
   </section>
 </template>

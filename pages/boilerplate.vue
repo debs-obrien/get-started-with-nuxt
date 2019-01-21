@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <Title :title="title" :subtitle="subtitle"/>
 
     <section class="sub-section">

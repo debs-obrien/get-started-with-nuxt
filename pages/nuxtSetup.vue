@@ -6,7 +6,9 @@
       <section class="sub-section">
         <h3 class="sub-heading">Install Nuxt</h3>
         <p>Once we have all this setup we are ready to install nuxt so open a terminal window. Make sure you are creating it in the desired place so cd myproject for example. When you create a nuxt project it will create a folder for you so keep that in mind when running this command</p>
-        <pre><code>npx create-nuxt-app project-name</code></pre>
+        <pre class="source-terminal"><code>
+          <span>npx create-nuxt-app project-name</span>
+        </code></pre>
         <p>Once you run the command you will get the following and one by one in the command you need ot answer the questions. Here is what I reccommend just change the name and description to whatever project you are working on.</p>
         <img src="~/assets/images/nuxt-setup.png" alt="setting up nuxt">
         <p>Once everything is setup you will see the following:</p>
