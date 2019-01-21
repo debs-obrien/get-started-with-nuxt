@@ -61,16 +61,19 @@ module.exports = Object.assign(routerBase, {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  purgeCSS: {
+    mode: 'postcss'
+  },
+
   /*
   ** Build configuration
   */
+
   build: {
     /*
     ** You can extend webpack config here
     */
-    purgeCSS: {
-      mode: 'postcss'
-    },
+
     postcss: {
       plugins: {
         tailwindcss: path.resolve(__dirname, './tailwind.js')
