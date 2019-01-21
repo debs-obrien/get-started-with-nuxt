@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": " "
+      "pre-commit": "npm run lint"
     }
   },
   "dependencies": {
@@ -30,7 +30,6 @@
     "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",
     "nuxt-purgecss": "^0.2.0",
-    "postcss-import": "^12.0.1",
     "vue-burger-menu": "^2.0.0"
   },
   "devDependencies": {

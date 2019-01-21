@@ -58,7 +58,7 @@
       <p>Ok yes your right it's really ugly but it works but yeh maybe you should delete it :)</p>
     </section>
 
-    <section class="sub-section bg-red">
+    <section class="sub-section">
       <h3 class="sub-heading">Purge you css</h3>
       <p>When you are building a website, chances are that you are using a css framework like Bootstrap, Materializecss, Foundation, etc... But you will only use a small set of the framework and a lot of unused css styles will be included.</p>
       <p>This is where Purgecss comes into play. Purgecss analyzes your content and your css files. Then it matches the selectors used in your files with the one in your content files. It removes unused selectors from your css, resulting in smaller css files</p>
