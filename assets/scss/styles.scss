@@ -1,4 +1,8 @@
-@import 'bulma';
+//@import 'bulma';
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
 @import 'fonts';
 @import 'variables';
 

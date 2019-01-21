@@ -5,7 +5,7 @@
     </div>
     <div v-show="isOpen" class="menu">
       <h2>Create a Nuxt app</h2>
-      <ul v-for="(item, index) in menu" :key="index">
+      <ul v-for="(item, index) in menu" :key="index" class="list-reset">
         <li class="nav-link">
           <nuxt-link :to="item.link">{{ item.text }}</nuxt-link>
         </li>

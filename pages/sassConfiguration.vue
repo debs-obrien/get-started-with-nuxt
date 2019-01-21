@@ -30,18 +30,15 @@
     <section class="sub-section">
       <h3 class="sub-heading">Globally include your variables</h3>
       <p>As you may have seen we have created a varialbes folder. This is where we put our variables such as colors etc. We can have separate files that are imported into this this or we can just add all varialbes here. This will depend on the size of your project. Obviously we want these varialbes to be available across all our components and to save us having to write an import inside each component we can gloabally install this file to make it avaialable everywhere. This is extremely useful for cases such as varaibles or mixins.</p>
-      <p>To do this we need to install the nuxt sass recources loader</p>
-      <pre><code>npm i nuxt-sass-resources-loader</code></pre>
+      <p>To do this we need to install the nuxt style recources loader</p>
+      <pre><code>npm i @nuxtjs/style-resources</code></pre>
       <p>Then we need to tell nuxt which file we want to globally make available. Open the nuxt.config.js and add to the modules the following code:</p>
       <pre><code>modules: [
-      ['nuxt-sass-resources-loader', './assets/scss/variables.scss']
+      ['@nuxtjs/style-resources']
       ],
-      // or array of paths
-      ['nuxt-sass-resources-loader', [
-      '@/path/to/varialbes.scss',
-      '@/path/to/mixins.scss'
-      ]],
-      </code></pre>
+      styleResources: {
+      scss: ['~assets/scss/variables.scss'], 
+      }</code></pre>
       <p>In order for this to load properly you will need to stop and start your servers again</p>
       <pre><code>npm run dev</code></pre>
       <p>Yes it's true, you are not going to see anything just yet as we haven't added anything to the varialbes file.</p>
@@ -59,6 +56,17 @@
       background-color: $primary;
       }</code></pre>
       <p>Ok yes your right it's really ugly but it works but yeh maybe you should delete it :)</p>
+    </section>
+
+    <section class="sub-section bg-red">
+      <h3 class="sub-heading">Purge you css</h3>
+      <p>When you are building a website, chances are that you are using a css framework like Bootstrap, Materializecss, Foundation, etc... But you will only use a small set of the framework and a lot of unused css styles will be included.</p>
+      <p>This is where Purgecss comes into play. Purgecss analyzes your content and your css files. Then it matches the selectors used in your files with the one in your content files. It removes unused selectors from your css, resulting in smaller css files</p>
+      <pre><code>npm i nuxt-purgecss</code></pre>
+      <p>Next add nuxt purgecss to the moudles section in your nuxt.config</p>
+      <pre><code> modules: [
+      'nuxt-purgecss',
+      ],</code></pre>
     </section>
   </section>
 </template>

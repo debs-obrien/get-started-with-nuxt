@@ -1,4 +1,6 @@
 const pkg = require('./package')
+const path = require('path')
+
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -46,8 +48,12 @@ module.exports = Object.assign(routerBase, {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    ['nuxt-sass-resources-loader', './assets/scss/variables.scss']
+    'nuxt-purgecss',
+    ['@nuxtjs/style-resources']
   ],
+  styleResources: {
+    scss: ['~assets/scss/variables.scss']
+  },
   /*
   ** Axios module configuration
   */
@@ -62,8 +68,11 @@ module.exports = Object.assign(routerBase, {
     /*
     ** You can extend webpack config here
     */
-    analyze: false,
-    extractCSS: true,
+    postcss: {
+      plugins: {
+        tailwindcss: path.resolve(__dirname, './tailwind.js')
+      }
+    },
     optimization: {
       splitChunks: {
         cacheGroups: {
