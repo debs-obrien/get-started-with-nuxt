@@ -68,6 +68,7 @@ module.exports = Object.assign(routerBase, {
     /*
     ** You can extend webpack config here
     */
+    mode: postcss,
     postcss: {
       plugins: {
         tailwindcss: path.resolve(__dirname, './tailwind.js')
