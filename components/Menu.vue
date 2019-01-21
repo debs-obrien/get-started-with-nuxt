@@ -97,6 +97,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.nav-link {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+.title {
+  margin: 20px 0;
+}
+
 /* For mobile only */
 @media only screen and (max-width: 1023px) {
   .header {
@@ -170,16 +182,4 @@ export default {
     text-align: center;
   }
 } /* end of media query */
-
-.nav-link {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-
-.hamburger {
-  display: none;
-}
-.title {
-  margin: 20px 0;
-}
 </style>
