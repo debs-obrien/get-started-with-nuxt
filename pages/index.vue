@@ -9,7 +9,7 @@
         <nuxt-link to="/nuxtSetup" class="button--green">Setup your Project</nuxt-link>
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt Documentation</a>
         <a
-          href="https://debs-obrien.github.io/get-started-with-nuxt/"
+          href="https://github.com/debs-obrien/get-started-with-nuxt"
           target="_blank"
           class="button--grey"
         >GitHub</a>
