@@ -19,7 +19,7 @@
       </div>
       <div class="grid-item">
         <div class="github">
-          <a hef="https://github.com/debs-obrien">
+          <a hef="https://debs-obrien.github.io/get-started-with-nuxt/">
             <img src="~/assets/images/github.png" alt="github">
           </a>
         </div>

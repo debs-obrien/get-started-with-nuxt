@@ -8,7 +8,11 @@
       <div class="links">
         <nuxt-link to="/nuxtSetup" class="button--green">Setup your Project</nuxt-link>
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+        <a
+          href="https://debs-obrien.github.io/get-started-with-nuxt/"
+          target="_blank"
+          class="button--grey"
+        >GitHub</a>
       </div>
     </div>
   </section>
