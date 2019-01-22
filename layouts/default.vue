@@ -7,7 +7,7 @@
             <img src="~/assets/images/twitter.png" alt="twitter">
           </a>
           <p class="twitter-handler">
-            <a hef="https://twitter.com/debs_obrien">debs_obrien</a>
+            <a href="https://twitter.com/debs_obrien">debs_obrien</a>
           </p>
         </div>
       </div>
@@ -19,7 +19,7 @@
       </div>
       <div class="grid-item">
         <div class="github">
-          <a hef="https://github.com/debs-obrien/get-started-with-nuxt">
+          <a href="https://github.com/debs-obrien/get-started-with-nuxt">
             <img src="~/assets/images/github.png" alt="github">
           </a>
         </div>
