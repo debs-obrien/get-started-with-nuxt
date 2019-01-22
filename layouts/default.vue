@@ -3,7 +3,7 @@
     <div class="grid">
       <div class="grid-item">
         <div class="twitter">
-          <a hef="https://twitter.com/debs_obrien">
+          <a href="https://twitter.com/debs_obrien">
             <img src="~/assets/images/twitter.png" alt="twitter">
           </a>
           <p class="twitter-handler">
